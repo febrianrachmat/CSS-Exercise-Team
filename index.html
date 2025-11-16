@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,76 +8,92 @@
 </head>
 
 <body>
-   
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <h1 class="logo">Restaurante</h1>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <main>
+        <header class="navbar" role="banner">
+            <!-- NAVBAR -->
+             <nav aria-label="main navigation">
+                <h1 class="logo">Restaurante</h1>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    
 
-    <!-- HOME SECTION -->
-    <section id="home" class="section home">
-        <h2>Simple, honest Italian flavors</h2>
-        <p class="sub"> Warm plates from our kitchen - seasonal ingredients, classic recipes, and cozy atmosphere.</p>
-        <div class="btngroup">
-            <a href="#reserve" class="btn">Reserve Table</a>
-            <a href="#menu" class="btn btn-secondary">See Menu</a>
-        </div>
-        <p>Open daily - breakfast light bites, casual lunch, and relaxed dinner. Perfect for friend and family gatherings.</p>
-        <div>
-            <div>Fresh Local produce</div>
-            <div>Seasonal pasta & sauces</div>
-            <div>Easy reservations</div>
-        </div>
-        <div>Authentic taste - (address) - open 08:00 - 22:00</div>
-    </section>
+        <!-- HOME SECTION -->
+         <section id="home" class="home-section">
+            <div class="home-inner"> 
+                <picture class="hero">
+                    <img src="asset/italian-foods.jpg" alt="Italian foods" class="hero-img">
+                </picture>
+                
+                <article class="home-content" aria-labelledby="home-heading">
+                    <header class="home-header">
+                        <h2 id="home-heading">Simple, honest Italian flavors</h2>
+                        <p class="sub">Warm plates from our kitchen — seasonal ingredients, classic recipes, and a cozy atmosphere.</p>
+                        <div class="btngroups" role="group" aria-label="Primary actions">
+                            <a href="#reserve" class="btngroup btngroup-primary">Reserve Table</a>
+                            <a href="#menu" class="btngroup btngroup-secondary">See Menu</a>
+                        </div>
+                    </header>
+                    
+                    <p class="sub">Open daily — breakfast light bites, casual lunch, and relaxed dinner. Perfect for friends and family gatherings.</p>
+                    <ul class="features" aria-hidden="true">
+                        <li class="feature">Fresh Local produce</li>
+                        <li class="feature">Seasonal pasta &amp; sauces</li>
+                        <li class="feature">Easy reservations</li>
+                    </ul>
+                    
+                    <footer class="section-footer">
+                        <address>Authentic taste - (address)</address>
+                        <p>Open 08:00 - 22:00</p>
+                    </footer>
+                </article>
+            </div>
+        </section>
 
-    <!-- ABOUT SECTION -->
-    <section class="about">
-        <h2>About</h2>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus modi quae illum perferendis, amet accusantium maiores corrupti quod illo architecto unde numquam consequuntur pariatur perspiciatis minima doloremque neque suscipit magni.
-        </p>
-        <img src="asset/pizza-JPEG.jpg" alt="Pizza">
-        
-    </section>
 
-    <!-- CONTACT SECTION -->
-    <section class="section contact">
-    <h2 style="text-align: center;">Contact Us</h2>
+        <!-- ABOUT SECTION -->
+        <section class="about">
+            <h2>About</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus modi quae illum perferendis, amet accusantium maiores corrupti quod illo architecto unde numquam consequuntur pariatur perspiciatis minima doloremque neque suscipit magni.
+            </p>
+            <img src="asset/pizza-JPEG.jpg" alt="Pizza">
+            
+        </section>
 
-    <div class="contact-info">
-        <p>📧 : <a href="mailto:restaurante@email.com">
-                restaurante@email.com
-            </a>
-        </p>
-        <p>📞 : <a href="tel:081234567890">
-                0812-3456-7890
-            </a>
-        </p>
-        <p>📍 : <a href="https://maps.google.com/?q=Jakarta+Indonesia">
-                Jakarta, Indonesia
-            </a>
-        </p>
-        <p>📷 : <a href="https://instagram.com/restaurante">
-                @restaurante
-            </a>
-        </p>
-    </div>
-</section>
-
-<footer>
-    <p>© 2025 Restaurante. All rights reserved.</p>
-
-    <div class="footer-links">
-        <a href="#home">🏠</a>
-        <a href="#about">📖</a>
-        <a href="#contact">📩</a>
-    </div>
-</footer>
-
+        <!-- CONTACT SECTION -->
+        <section class="section contact">
+            <h2 style="text-align: center;">Contact Us</h2>
+            
+            <div class="contact-info">
+                <p>
+                    📧 : <a href="mailto:restaurante@email.com">
+                    restaurante@email.com</a>
+                </p>
+                <p>
+                    📞 : <a href="tel:081234567890">
+                    0812-3456-7890</a>
+                </p>
+                <p>📍 : <a href="https://maps.google.com/?q=Jakarta+Indonesia">
+                    Jakarta, Indonesia</a>
+                </p>
+                <p>📷 : <a href="https://instagram.com/restaurante">
+                    @restaurante</a>
+                </p>
+            </div>
+        </section>
+        <footer>
+            <p>© 2025 Restaurante. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#home">🏠</a>
+                <a href="#about">📖</a>
+                <a href="#contact">📩</a>
+            </div>
+        </footer>
+    </main>
+</body>
 </html>
