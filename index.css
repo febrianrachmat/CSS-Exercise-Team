@@ -152,6 +152,13 @@ body {
   place-items: center;
 }
 
+.site-main {
+  max-width: 1200px;
+  margin: 0 auto; 
+  padding: 0 16px;  
+  box-sizing: border-box;
+}
+
 /* HOME SECTION */
 .home-section {
   max-width: 1200px;
